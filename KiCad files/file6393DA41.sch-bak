@@ -1,0 +1,194 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 5100 3150
+NoConn ~ 5100 3250
+Wire Wire Line
+	5100 3550 5550 3550
+Wire Wire Line
+	5100 3650 5550 3650
+Wire Wire Line
+	5100 3850 6000 3850
+Wire Wire Line
+	5100 2450 5350 2450
+NoConn ~ 5100 3450
+NoConn ~ 5100 3350
+Wire Wire Line
+	5350 2850 5100 2850
+Wire Wire Line
+	5350 2650 5100 2650
+Text Notes 5150 3150 0    50   ~ 0
+Spare wire
+Text Notes 5150 3450 0    50   ~ 0
+Spare wire
+Text Notes 5150 3350 0    50   ~ 0
+Spare wire
+Text Notes 5150 3250 0    50   ~ 0
+Spare wire
+Text Notes 5700 3800 0    50   ~ 0
+Fused 12V for Tachometer circuit
+Text Notes 5650 4800 0    50   ~ 0
+CKP VR+
+Text GLabel 5350 4750 2    50   Input ~ 0
+CKP+
+Wire Wire Line
+	5350 3950 5100 3950
+Text GLabel 5350 3750 2    50   Input ~ 0
+F5-out
+$Comp
+L power:VDDA #PWR033
+U 1 1 63BCA77A
+P 7450 3050
+F 0 "#PWR033" H 7450 2900 50  0001 C CNN
+F 1 "VDDA" V 7465 3178 50  0000 L CNN
+F 2 "" H 7450 3050 50  0001 C CNN
+F 3 "" H 7450 3050 50  0001 C CNN
+	1    7450 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2550 6000 2550
+Text Notes 7800 3100 0    50   ~ 0
+5V ADC
+Text GLabel 5350 2850 2    50   Input ~ 0
+IAT-Sensor
+Text GLabel 6000 2750 2    50   Input ~ 0
+CLT-Sensor
+Wire Wire Line
+	5100 2950 6000 2950
+Text Notes 5850 2900 0    50   ~ 0
+Inlet Air Temperature
+Text Notes 6550 2800 0    50   ~ 0
+Cylinder head temperaure
+Text Notes 6500 2600 0    50   ~ 0
+Wide Band O2 sensor
+Text Notes 5850 2700 0    50   ~ 0
+Throttle Position Sensor
+Text Notes 5850 2500 0    50   ~ 0
+Spare ADC
+Text Notes 6350 3000 0    50   ~ 0
+Sensor ground
+Text Notes 5850 3700 0    50   ~ 0
+Common ground
+Text Notes 5850 3600 0    50   ~ 0
+Common ground
+Text Notes 6300 4900 0    50   ~ 0
+CKP VR-
+Text Notes 6550 4500 0    50   ~ 0
+Ign2
+Text Notes 5900 4600 0    50   ~ 0
+Ign1
+Text Notes 6550 4700 0    50   ~ 0
+Tachometer signal
+Text Notes 5900 4000 0    50   ~ 0
+ASD relay control
+Text Notes 6550 3900 0    50   ~ 0
+Spare high current output 
+Text Notes 5900 4200 0    50   ~ 0
+PWM Idle
+Text Notes 6500 4300 0    50   ~ 0
+Inj2
+Text Notes 5850 4400 0    50   ~ 0
+Inj1
+Text Notes 7350 4100 2    50   ~ 0
+12 volt from main relay
+Text GLabel 5350 2450 2    50   Input ~ 0
+Spare-ADC
+Text GLabel 6000 4850 2    50   Input ~ 0
+CKP-
+Text GLabel 6000 4450 2    50   Input ~ 0
+D53-control
+Text GLabel 5350 4550 2    50   Input ~ 0
+D52-control
+Text GLabel 6000 4650 2    50   Input ~ 0
+Tachometer
+Text GLabel 5350 3950 2    50   Input ~ 0
+D50-control
+Text GLabel 6000 3850 2    50   Input ~ 0
+D11-control
+Text GLabel 5350 4150 2    50   Input ~ 0
+D10-control
+Text GLabel 6000 4250 2    50   Input ~ 0
+D9-control
+$Comp
+L power:GND #PWR031
+U 1 1 63BCA753
+P 5550 3550
+F 0 "#PWR031" H 5550 3300 50  0001 C CNN
+F 1 "GND" V 5555 3422 50  0000 R CNN
+F 2 "" H 5550 3550 50  0001 C CNN
+F 3 "" H 5550 3550 50  0001 C CNN
+	1    5550 3550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5350 4350 2    50   Input ~ 0
+D8-control
+Wire Wire Line
+	5100 4050 6000 4050
+Wire Wire Line
+	5100 4650 6000 4650
+Wire Wire Line
+	5100 4850 6000 4850
+Wire Wire Line
+	5100 4450 6000 4450
+Wire Wire Line
+	5100 4250 6000 4250
+Wire Wire Line
+	5100 2750 6000 2750
+Wire Wire Line
+	5100 4350 5350 4350
+Wire Wire Line
+	5100 3750 5350 3750
+Wire Wire Line
+	5100 4750 5350 4750
+Wire Wire Line
+	5100 4150 5350 4150
+Wire Wire Line
+	5100 4550 5350 4550
+Text GLabel 6000 4050 2    50   Input ~ 0
+12V-Raw
+$Comp
+L power:GND #PWR032
+U 1 1 63BCA740
+P 5550 3650
+F 0 "#PWR032" H 5550 3400 50  0001 C CNN
+F 1 "GND" V 5555 3522 50  0000 R CNN
+F 2 "" H 5550 3650 50  0001 C CNN
+F 3 "" H 5550 3650 50  0001 C CNN
+	1    5550 3650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6000 2950 2    50   Input ~ 0
+SigRtn
+Text GLabel 5350 2650 2    50   Input ~ 0
+TPS-Sensor
+Text GLabel 6000 2550 2    50   Input ~ 0
+O2-Sensor
+Text Notes 3950 2050 0    100  ~ 0
+DB25 connections to Buggly SPD Aux board
+$Comp
+L Connector:DB25_Female J7
+U 1 1 63D673A1
+P 4800 3650
+F 0 "J7" H 4980 3696 50  0000 L CNN
+F 1 "DB25_Male" H 4980 3605 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4800 3650 50  0001 C CNN
+F 3 " ~" H 4800 3650 50  0001 C CNN
+	1    4800 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3050 7450 3050
+$EndSCHEMATC

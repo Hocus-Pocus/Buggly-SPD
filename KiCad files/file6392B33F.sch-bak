@@ -1,0 +1,527 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 6393620C
+P 6300 3350
+AR Path="/638E2E23/6393620C" Ref="C?"  Part="1" 
+AR Path="/6392B340/6393620C" Ref="C24"  Part="1" 
+F 0 "C24" H 6415 3441 50  0000 L CNN
+F 1 "0.1uF" H 6415 3350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6338 3200 50  0001 C CNN
+F 3 "~" H 6300 3350 50  0001 C CNN
+F 4 "50v" H 6415 3259 50  0000 L CNN "Voltage"
+F 5 "445-180563-1-ND" H 800 500 50  0001 C CNN "Digikey Part Number"
+F 6 "TDK" H 800 500 50  0001 C CNN "Manufacturer_Name"
+F 7 "FA18X8R1E104KNU06" H 800 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E104KNU06/445-180563-1-ND/9560689" H 800 500 50  0001 C CNN "URL"
+	1    6300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 63936217
+P 5850 3350
+AR Path="/638E2E23/63936217" Ref="C?"  Part="1" 
+AR Path="/6392B340/63936217" Ref="C23"  Part="1" 
+F 0 "C23" H 5965 3396 50  0000 L CNN
+F 1 "10uF" H 5965 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5850 3350 50  0001 C CNN
+F 3 "" H 5850 3350 50  0001 C CNN
+F 4 "50v" H 5850 3350 50  0001 C CNN "Voltage"
+F 5 "P10316-ND" H 800 500 50  0001 C CNN "Digikey Part Number"
+F 6 "Panasonic" H 800 500 50  0001 C CNN "Manufacturer_Name"
+F 7 "EEU-FC1H100L" H 800 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "https://www.digikey.com.au/product-detail/en/panasonic-electronic-components/EEU-FC1H100L/P10316-ND/266325" H 800 500 50  0001 C CNN "URL"
+	1    5850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3200 6300 2950
+$Comp
+L Device:C C?
+U 1 1 63936222
+P 8400 3350
+AR Path="/638E2E23/63936222" Ref="C?"  Part="1" 
+AR Path="/6392B340/63936222" Ref="C25"  Part="1" 
+F 0 "C25" H 8150 3450 50  0000 L CNN
+F 1 "0.1uF" H 8100 3350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 8438 3200 50  0001 C CNN
+F 3 "~" H 8400 3350 50  0001 C CNN
+F 4 "445-180563-1-ND" H 1500 500 50  0001 C CNN "Digikey Part Number"
+F 5 "TDK" H 1500 500 50  0001 C CNN "Manufacturer_Name"
+F 6 "FA18X8R1E104KNU06" H 1500 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E104KNU06/445-180563-1-ND/9560689" H 1500 500 50  0001 C CNN "URL"
+	1    8400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 6393622D
+P 8750 3350
+AR Path="/638E2E23/6393622D" Ref="C?"  Part="1" 
+AR Path="/6392B340/6393622D" Ref="C26"  Part="1" 
+F 0 "C26" H 8865 3441 50  0000 L CNN
+F 1 "47uF" H 8865 3350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 8750 3350 50  0001 C CNN
+F 3 "" H 8750 3350 50  0001 C CNN
+F 4 "" H 8865 3259 50  0000 L CNN "Voltage"
+F 5 "P19658CT-ND" H 1500 500 50  0001 C CNN "Digikey Part Number"
+F 6 "Panasonic" H 1500 500 50  0001 C CNN "Manufacturer_Name"
+F 7 "EEU-FC1H470B" H 1500 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "" H 1500 500 50  0001 C CNN "URL"
+	1    8750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3200 8750 3200
+Connection ~ 8750 3200
+Wire Wire Line
+	8750 2950 8750 3200
+$Comp
+L power:GND #PWR?
+U 1 1 63936236
+P 7150 4000
+AR Path="/638E2E23/63936236" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/63936236" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 7150 3750 50  0001 C CNN
+F 1 "GND" H 7155 3827 50  0000 C CNN
+F 2 "" H 7150 4000 50  0001 C CNN
+F 3 "" H 7150 4000 50  0001 C CNN
+	1    7150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3600 5850 3600
+Wire Wire Line
+	5850 3500 5850 3600
+Connection ~ 5850 3600
+Wire Wire Line
+	5850 3600 6300 3600
+Wire Wire Line
+	6300 3500 6300 3600
+Connection ~ 6300 3600
+Wire Wire Line
+	6300 3600 7150 3600
+Connection ~ 7150 3600
+Wire Wire Line
+	8750 3500 8750 3600
+Wire Wire Line
+	8750 3600 8400 3600
+Wire Wire Line
+	8400 3500 8400 3600
+Connection ~ 8400 3600
+Text Notes 6350 1600 0    89   ~ 0
+5 Volt Power Regulator
+Text GLabel 5850 2100 1    50   Input ~ 0
+12V
+Text Notes 3750 5050 0    89   ~ 0
+Reset Protection
+Text Notes 3600 5200 0    58   ~ 0
+Refer AVR040 Application Note
+$Comp
+L Device:C C?
+U 1 1 63936250
+P 3800 5950
+AR Path="/638E2E23/63936250" Ref="C?"  Part="1" 
+AR Path="/6392B340/63936250" Ref="C22"  Part="1" 
+F 0 "C22" V 3750 5700 50  0000 L CNN
+F 1 "22uF" V 3850 5700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3838 5800 50  0001 C CNN
+F 3 "~" H 3800 5950 50  0001 C CNN
+F 4 "445-180603-1-ND" H -1900 1000 50  0001 C CNN "Digikey Part Number"
+F 5 "TDK" H -1900 1000 50  0001 C CNN "Manufacturer_Name"
+F 6 "FA22X7R1E226MRU06" H -1900 1000 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "" H -1900 1000 50  0001 C CNN "URL"
+	1    3800 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6393625A
+P 4050 5700
+AR Path="/638E2E23/6393625A" Ref="R?"  Part="1" 
+AR Path="/6392B340/6393625A" Ref="R23"  Part="1" 
+F 0 "R23" V 4150 5650 50  0000 L CNN
+F 1 "120R" V 3950 5600 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3980 5700 50  0001 C CNN
+F 3 "~" H 4050 5700 50  0001 C CNN
+F 4 "BC3453CT-ND" H -1900 1000 50  0001 C CNN "Digikey Part Number"
+F 5 "Vishay" H -1900 1000 50  0001 C CNN "Manufacturer_Name"
+F 6 "MBA02040C1200FC100" H -1900 1000 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "" H -1900 1000 50  0001 C CNN "URL"
+	1    4050 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 63936260
+P 4250 5550
+AR Path="/638E2E23/63936260" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/63936260" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 4250 5400 50  0001 C CNN
+F 1 "VDD" H 4267 5723 50  0000 C CNN
+F 2 "" H 4250 5550 50  0001 C CNN
+F 3 "" H 4250 5550 50  0001 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63936266
+P 3550 5950
+AR Path="/638E2E23/63936266" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/63936266" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 3550 5700 50  0001 C CNN
+F 1 "GND" V 3555 5822 50  0000 R CNN
+F 2 "" H 3550 5950 50  0001 C CNN
+F 3 "" H 3550 5950 50  0001 C CNN
+	1    3550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 5950 3650 5950
+Wire Wire Line
+	4050 6050 4050 5950
+Wire Wire Line
+	3950 5950 4050 5950
+Connection ~ 4050 5950
+Wire Wire Line
+	4050 5950 4050 5850
+Wire Wire Line
+	4050 5550 4250 5550
+Text GLabel 4450 6250 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	4050 6050 4100 6050
+$Comp
+L Device:R R?
+U 1 1 63936278
+P 3850 6250
+AR Path="/638E2E23/63936278" Ref="R?"  Part="1" 
+AR Path="/6392B340/63936278" Ref="R22"  Part="1" 
+F 0 "R22" V 3750 6150 50  0000 L CNN
+F 1 "10k" V 3950 6150 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3780 6250 50  0001 C CNN
+F 3 "~" H 3850 6250 50  0001 C CNN
+F 4 "BC10.0KXCT-ND" H -1900 1000 50  0001 C CNN "Digikey Part Number"
+F 5 "Vishay" H -1900 1000 50  0001 C CNN "Manufacturer_Name"
+F 6 "MBA02040C1002FRP00" H -1900 1000 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.com.au/product-detail/en/vishay-beyschlag-draloric-bc-components/MBA02040C1002FRP00/BC10-0KXCT-ND/336866" H -1900 1000 50  0001 C CNN "URL"
+	1    3850 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 6250 4300 6250
+$Comp
+L power:VDD #PWR?
+U 1 1 6393627F
+P 3600 6250
+AR Path="/638E2E23/6393627F" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/6393627F" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 3600 6100 50  0001 C CNN
+F 1 "VDD" H 3617 6423 50  0000 C CNN
+F 2 "" H 3600 6250 50  0001 C CNN
+F 3 "" H 3600 6250 50  0001 C CNN
+	1    3600 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 6250 3700 6250
+$Comp
+L Regulator_Linear:LM2937xS U?
+U 1 1 6393628C
+P 7150 2950
+AR Path="/638E2E23/6393628C" Ref="U?"  Part="1" 
+AR Path="/6392B340/6393628C" Ref="U7"  Part="1" 
+F 0 "U7" H 7150 3192 50  0000 C CNN
+F 1 "LM2940T-5.0" H 7150 3101 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 7150 3175 50  0001 C CIN
+F 3 "" H 7150 2900 50  0001 C CNN
+F 4 "" H 7150 2950 50  0001 C CNN "TR PN"
+F 5 "" H 7150 2950 50  0001 C CNN "Tube PN"
+F 6 "NCV7805BTGOS-ND" H 800 500 50  0001 C CNN "Digikey Part Number"
+F 7 "ON Semi" H 800 500 50  0001 C CNN "Manufacturer_Name"
+F 8 "NCV7805BTG" H 800 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "https://www.digikey.com.au/product-detail/en/on-semiconductor/NCV7805BTG/NCV7805BTGOS-ND/921437" H 800 500 50  0001 C CNN "URL"
+	1    7150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3250 7150 3600
+Wire Wire Line
+	8600 2950 8750 2950
+$Comp
+L power:VDD #PWR?
+U 1 1 63936294
+P 8000 2000
+AR Path="/638E2E23/63936294" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/63936294" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 8000 1850 50  0001 C CNN
+F 1 "VDD" V 8000 2150 50  0000 L CNN
+F 2 "" H 8000 2000 50  0001 C CNN
+F 3 "" H 8000 2000 50  0001 C CNN
+	1    8000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F?
+U 1 1 6393629E
+P 8600 2800
+AR Path="/638E2E23/6393629E" Ref="F?"  Part="1" 
+AR Path="/6392B340/6393629E" Ref="F1"  Part="1" 
+F 0 "F1" H 8688 2846 50  0000 L CNN
+F 1 "MF-R050" H 8688 2755 50  0000 L CNN
+F 2 "Fuse:Fuse_BelFuse_0ZRE0100FF_L18.7mm_W5.1mm" H 8650 2600 50  0001 L CNN
+F 3 "~" H 8600 2800 50  0001 C CNN
+F 4 "507-2403-ND" H 1500 500 50  0001 C CNN "Digikey Part Number"
+F 5 "Bel Fuse" H 1500 500 50  0001 C CNN "Manufacturer_Name"
+F 6 "0ZRP0050FF1E" H 1500 500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.com.au/product-detail/en/bel-fuse-inc/0ZRP0050FF1E/507-2403-ND/9468252" H 1500 500 50  0001 C CNN "URL"
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3600 5300 3550
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 639362A5
+P 4200 6050
+AR Path="/638E2E23/639362A5" Ref="JP?"  Part="1" 
+AR Path="/6392B340/639362A5" Ref="JP1"  Part="1" 
+F 0 "JP1" H 4200 6143 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 4200 6144 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 6050 50  0001 C CNN
+F 3 "~" H 4200 6050 50  0001 C CNN
+	1    4200 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6050 4300 6250
+Connection ~ 4300 6250
+Wire Wire Line
+	4300 6250 4450 6250
+Wire Wire Line
+	7150 3600 8400 3600
+Connection ~ 8600 2950
+$Comp
+L power:VDDA #PWR?
+U 1 1 639362B0
+P 8600 2000
+AR Path="/638E2E23/639362B0" Ref="#PWR?"  Part="1" 
+AR Path="/6392B340/639362B0" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 8600 1850 50  0001 C CNN
+F 1 "VDDA" V 8600 2150 50  0000 L CNN
+F 2 "" H 8600 2000 50  0001 C CNN
+F 3 "" H 8600 2000 50  0001 C CNN
+	1    8600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2950 8000 2950
+Connection ~ 8000 2950
+Wire Wire Line
+	8000 2950 8600 2950
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 639362B9
+P 5850 2300
+AR Path="/638E2E23/639362B9" Ref="#FLG?"  Part="1" 
+AR Path="/6392B340/639362B9" Ref="#FLG02"  Part="1" 
+F 0 "#FLG02" H 5850 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 5850 2428 50  0000 L CNN
+F 2 "" H 5850 2300 50  0001 C CNN
+F 3 "~" H 5850 2300 50  0001 C CNN
+	1    5850 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 3600 7150 3750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 639362C0
+P 7150 3850
+AR Path="/638E2E23/639362C0" Ref="#FLG?"  Part="1" 
+AR Path="/6392B340/639362C0" Ref="#FLG04"  Part="1" 
+F 0 "#FLG04" H 7150 3925 50  0001 C CNN
+F 1 "PWR_FLAG" V 7150 3978 50  0000 L CNN
+F 2 "" H 7150 3850 50  0001 C CNN
+F 3 "~" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 7150 3850
+Wire Wire Line
+	7150 3850 7150 4000
+Text Notes 2400 3000 0    50   ~ 0
+12 volt output from Main Relay in Aux board
+Wire Wire Line
+	8000 2000 8000 2250
+Wire Wire Line
+	8600 2000 8600 2250
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 639362CB
+P 8600 2250
+AR Path="/638E2E23/639362CB" Ref="#FLG?"  Part="1" 
+AR Path="/6392B340/639362CB" Ref="#FLG05"  Part="1" 
+F 0 "#FLG05" H 8600 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 8600 2378 50  0000 L CNN
+F 2 "" H 8600 2250 50  0001 C CNN
+F 3 "~" H 8600 2250 50  0001 C CNN
+	1    8600 2250
+	0    1    1    0   
+$EndComp
+Connection ~ 8600 2250
+Wire Wire Line
+	8600 2250 8600 2650
+Text Notes 8900 3500 0    50   ~ 0
+10V
+Text Notes 8150 3500 0    50   ~ 0
+50V
+Text Notes 6000 3500 0    50   ~ 0
+35V
+$Comp
+L Device:D D?
+U 1 1 639362D6
+P 5500 2950
+AR Path="/638E2E23/639362D6" Ref="D?"  Part="1" 
+AR Path="/6392B340/639362D6" Ref="D17"  Part="1" 
+F 0 "D17" H 5500 2733 50  0000 C CNN
+F 1 "1N5818" H 5500 2824 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5500 2950 50  0001 C CNN
+F 3 "~" H 5500 2950 50  0001 C CNN
+	1    5500 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Varistor RV?
+U 1 1 639362DC
+P 5300 3400
+AR Path="/638E2E23/639362DC" Ref="RV?"  Part="1" 
+AR Path="/6392B340/639362DC" Ref="RV1"  Part="1" 
+F 0 "RV1" V 5400 3350 50  0000 L CNN
+F 1 "ERZ-V14D220" V 5150 3150 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D15.5mm_W4.7mm_P7.5mm" V 5230 3400 50  0001 C CNN
+F 3 "~" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 2950 0    50   Input ~ 0
+12V-Raw
+Wire Wire Line
+	4600 2950 5300 2950
+Wire Wire Line
+	5650 2950 5850 2950
+Connection ~ 6300 2950
+Wire Wire Line
+	5850 2300 5850 2500
+Connection ~ 5850 2950
+Wire Wire Line
+	5850 2950 6300 2950
+Wire Wire Line
+	5850 2950 5850 3200
+Wire Wire Line
+	5300 3250 5300 2950
+Connection ~ 5300 2950
+Wire Wire Line
+	5300 2950 5350 2950
+Wire Wire Line
+	5600 2500 5850 2500
+Connection ~ 5850 2500
+Wire Wire Line
+	5850 2500 5850 2950
+Wire Wire Line
+	5850 2300 5850 2100
+Connection ~ 5850 2300
+Text GLabel 5850 3750 0    50   Input ~ 0
+SigRtn
+Wire Wire Line
+	6950 3750 7150 3750
+Connection ~ 7150 3750
+Wire Wire Line
+	7150 3750 7150 3850
+Wire Wire Line
+	6300 2950 6850 2950
+Text Notes 4000 2550 0    50   ~ 0
+12 volt test point header socket
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 639362F8
+P 5400 2500
+AR Path="/638E2E23/639362F8" Ref="J?"  Part="1" 
+AR Path="/6392B340/639362F8" Ref="J8"  Part="1" 
+F 0 "J8" H 5318 2717 50  0000 C CNN
+F 1 "12V Test" H 5318 2626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5400 2500 50  0001 C CNN
+F 3 "~" H 5400 2500 50  0001 C CNN
+	1    5400 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 639362FE
+P 6800 3750
+AR Path="/638E2E23/639362FE" Ref="JP?"  Part="1" 
+AR Path="/6392B340/639362FE" Ref="JP2"  Part="1" 
+F 0 "JP2" H 6800 3850 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6700 3600 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6800 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 63936304
+P 6050 3850
+AR Path="/638E2E23/63936304" Ref="#FLG?"  Part="1" 
+AR Path="/6392B340/63936304" Ref="#FLG03"  Part="1" 
+F 0 "#FLG03" H 6050 3925 50  0001 C CNN
+F 1 "PWR_FLAG" V 6050 3978 50  0000 L CNN
+F 2 "" H 6050 3850 50  0001 C CNN
+F 3 "~" H 6050 3850 50  0001 C CNN
+	1    6050 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 3750 6050 3750
+Wire Wire Line
+	6050 3850 6050 3750
+Connection ~ 6050 3750
+Wire Wire Line
+	6050 3750 6650 3750
+Text Notes 3800 3950 0    50   ~ 0
+Note! SigRtn connects to ground at this point only.
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 6393056F
+P 7900 2250
+AR Path="/638E2E23/6393056F" Ref="#FLG?"  Part="1" 
+AR Path="/6392B340/6393056F" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 7900 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 7900 2378 50  0000 L CNN
+F 2 "" H 7900 2250 50  0001 C CNN
+F 3 "~" H 7900 2250 50  0001 C CNN
+	1    7900 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2250 8000 2250
+Connection ~ 8000 2250
+Wire Wire Line
+	8000 2250 8000 2950
+$EndSCHEMATC
