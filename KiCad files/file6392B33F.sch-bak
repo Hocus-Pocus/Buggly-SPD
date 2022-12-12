@@ -369,8 +369,6 @@ Wire Wire Line
 Text Notes 2400 3000 0    50   ~ 0
 12 volt output from Main Relay in Aux board
 Wire Wire Line
-	8000 2000 8000 2250
-Wire Wire Line
 	8600 2000 8600 2250
 $Comp
 L power:PWR_FLAG #FLG?
@@ -506,22 +504,6 @@ Wire Wire Line
 	6050 3750 6650 3750
 Text Notes 3800 3950 0    50   ~ 0
 Note! SigRtn connects to ground at this point only.
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 6393056F
-P 7900 2250
-AR Path="/638E2E23/6393056F" Ref="#FLG?"  Part="1" 
-AR Path="/6392B340/6393056F" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 7900 2325 50  0001 C CNN
-F 1 "PWR_FLAG" V 7900 2378 50  0000 L CNN
-F 2 "" H 7900 2250 50  0001 C CNN
-F 3 "~" H 7900 2250 50  0001 C CNN
-	1    7900 2250
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	7900 2250 8000 2250
-Connection ~ 8000 2250
-Wire Wire Line
-	8000 2250 8000 2950
+	8000 2000 8000 2950
 $EndSCHEMATC
