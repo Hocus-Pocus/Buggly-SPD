@@ -19,24 +19,12 @@ Wire Wire Line
 	5100 3550 5550 3550
 Wire Wire Line
 	5100 3650 5550 3650
-Wire Wire Line
-	5100 3850 6000 3850
-Wire Wire Line
-	5100 2450 5350 2450
 NoConn ~ 5100 3450
 NoConn ~ 5100 3350
 Wire Wire Line
 	5350 2850 5100 2850
 Wire Wire Line
 	5350 2650 5100 2650
-Text Notes 5150 3150 0    50   ~ 0
-Spare wire
-Text Notes 5150 3450 0    50   ~ 0
-Spare wire
-Text Notes 5150 3350 0    50   ~ 0
-Spare wire
-Text Notes 5150 3250 0    50   ~ 0
-Spare wire
 Text Notes 5700 3800 0    50   ~ 0
 Fused 12V for Tachometer circuit
 Text Notes 5650 4800 0    50   ~ 0
@@ -76,8 +64,6 @@ Text Notes 6500 2600 0    50   ~ 0
 Wide Band O2 sensor
 Text Notes 5850 2700 0    50   ~ 0
 Throttle Position Sensor
-Text Notes 5850 2500 0    50   ~ 0
-Spare ADC
 Text Notes 6350 3000 0    50   ~ 0
 Sensor ground
 Text Notes 5850 3700 0    50   ~ 0
@@ -86,42 +72,24 @@ Text Notes 5850 3600 0    50   ~ 0
 Common ground
 Text Notes 6300 4900 0    50   ~ 0
 CKP VR-
-Text Notes 6550 4500 0    50   ~ 0
-Ign2
 Text Notes 5900 4600 0    50   ~ 0
 Ign1
-Text Notes 6550 4700 0    50   ~ 0
-Tachometer signal
 Text Notes 5900 4000 0    50   ~ 0
 ASD relay control
-Text Notes 6550 3900 0    50   ~ 0
-Spare high current output 
 Text Notes 5900 4200 0    50   ~ 0
 PWM Idle
-Text Notes 6500 4300 0    50   ~ 0
-Inj2
 Text Notes 5850 4400 0    50   ~ 0
 Inj1
 Text Notes 7350 4100 2    50   ~ 0
 12 volt from main relay
-Text GLabel 5350 2450 2    50   Input ~ 0
-Spare-ADC
 Text GLabel 6000 4850 2    50   Input ~ 0
 CKP-
-Text GLabel 6000 4450 2    50   Input ~ 0
-D53-control
 Text GLabel 5350 4550 2    50   Input ~ 0
-D52-control
-Text GLabel 6000 4650 2    50   Input ~ 0
-Tachometer
+D40-control
 Text GLabel 5350 3950 2    50   Input ~ 0
-D50-control
-Text GLabel 6000 3850 2    50   Input ~ 0
-D11-control
+D45-control
 Text GLabel 5350 4150 2    50   Input ~ 0
-D10-control
-Text GLabel 6000 4250 2    50   Input ~ 0
-D9-control
+D6-control
 $Comp
 L power:GND #PWR031
 U 1 1 63BCA753
@@ -179,10 +147,10 @@ O2-Sensor
 Text Notes 3950 2050 0    100  ~ 0
 DB25 connections to Buggly SPD Aux board
 $Comp
-L Connector:DB25_Female J7
+L Connector:DB25_Female J15
 U 1 1 63D673A1
 P 4800 3650
-F 0 "J7" H 4980 3696 50  0000 L CNN
+F 0 "J15" H 4980 3696 50  0000 L CNN
 F 1 "DB25_Male" H 4980 3605 50  0000 L CNN
 F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4800 3650 50  0001 C CNN
 F 3 " ~" H 4800 3650 50  0001 C CNN
@@ -191,4 +159,28 @@ F 3 " ~" H 4800 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 3050 7450 3050
+Text GLabel 5350 2450 2    50   Input ~ 0
+Spare-ADC
+Text Notes 5850 2500 0    50   ~ 0
+Spare ADC
+Wire Wire Line
+	5350 2450 5100 2450
+Text GLabel 6000 4250 2    50   Input ~ 0
+D9-control
+Text GLabel 6000 4650 2    50   Input ~ 0
+Tachometer
+Text GLabel 6000 4450 2    50   Input ~ 0
+D38-control
+Text Notes 6500 4300 0    50   ~ 0
+Inj2
+Text Notes 6550 4700 0    50   ~ 0
+Tachometer signal
+Text Notes 6550 4500 0    50   ~ 0
+Ign2
+Text GLabel 6000 3850 2    50   Input ~ 0
+D5-control
+Text Notes 6500 3900 0    50   ~ 0
+Spare H/C out
+Wire Wire Line
+	6000 3850 5100 3850
 $EndSCHEMATC

@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
-Title ""
-Date ""
+Title "Buggly SPD"
+Date "2022-12-14"
 Rev ""
-Comp ""
+Comp "Robert Hiebert"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -105,7 +105,7 @@ Wire Wire Line
 	1300 4850 1450 4850
 Connection ~ 1450 4850
 Text GLabel 2700 4850 2    50   Input ~ 0
-MCU-A7
+MCU-A8
 Wire Wire Line
 	2700 4850 2500 4850
 Connection ~ 2500 4850
@@ -176,7 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 6550 6100 6750
 Text GLabel 2350 6250 2    50   Input ~ 0
-ADC-Clamp-2
+ADC-Clamp-4
 Wire Wire Line
 	5900 6250 5900 6550
 Connection ~ 5900 6550
@@ -188,7 +188,7 @@ Wire Wire Line
 	4900 6550 5050 6550
 Connection ~ 5050 6550
 Text GLabel 2750 6550 2    50   Input ~ 0
-MCU-A2
+MCU-A4
 Wire Wire Line
 	6300 6550 6100 6550
 Connection ~ 6100 6550
@@ -269,7 +269,7 @@ Wire Wire Line
 	4850 3000 5000 3000
 Connection ~ 5000 3000
 Text GLabel 3650 3750 2    50   Input ~ 0
-MCU-A0
+MCU-A5
 Wire Wire Line
 	6250 3000 6050 3000
 Connection ~ 6050 3000
@@ -380,7 +380,7 @@ Wire Wire Line
 	4900 4850 5050 4850
 Connection ~ 5050 4850
 Text GLabel 3600 2100 2    50   Input ~ 0
-MCU-A1
+MCU-A3
 Wire Wire Line
 	6300 4850 6100 4850
 Connection ~ 6100 4850
@@ -477,7 +477,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 6550 2550 6750
 Text GLabel 5850 2700 2    50   Input ~ 0
-ADC-Clamp-3
+ADC-Clamp-0
 Wire Wire Line
 	2350 6250 2350 6550
 Connection ~ 2350 6550
@@ -485,7 +485,7 @@ Wire Wire Line
 	2350 6550 2550 6550
 Connection ~ 1500 6550
 Text GLabel 6300 4850 2    50   Input ~ 0
-MCU-A4
+MCU-A1
 Wire Wire Line
 	2750 6550 2550 6550
 Connection ~ 2550 6550
@@ -559,7 +559,7 @@ F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18NP01H471JN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6250 3000 2    50   Input ~ 0
-MCU-A3
+MCU-A0
 Wire Wire Line
 	3050 2100 3200 2100
 Wire Wire Line
@@ -570,11 +570,11 @@ Wire Wire Line
 Wire Wire Line
 	1500 7200 2550 7200
 Text GLabel 2300 4550 2    50   Input ~ 0
-ADC-Clamp-7
+ADC-Clamp-8
 Text GLabel 5900 4550 2    50   Input ~ 0
-ADC-Clamp-4
+ADC-Clamp-1
 Text GLabel 5900 6250 2    50   Input ~ 0
-ADC-Clamp-5
+ADC-Clamp-2
 $Comp
 L Diode:1N5818 D8
 U 1 1 63914EF5
@@ -601,32 +601,6 @@ Wire Wire Line
 Connection ~ 9950 1250
 Wire Wire Line
 	9950 1250 9950 1350
-$Comp
-L Diode:1N5818 D13
-U 1 1 63914F03
-P 10200 2950
-F 0 "D13" H 10200 3167 50  0000 C CNN
-F 1 "1N5818" H 10200 3076 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10200 2775 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10200 2950 50  0001 C CNN
-	1    10200 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 2950 10450 2950
-Wire Wire Line
-	10050 2950 9950 2950
-Wire Wire Line
-	9950 2950 9950 3050
-Wire Wire Line
-	9950 3150 10050 3150
-Text GLabel 9800 3050 0    50   Input ~ 0
-ADC-Clamp-7
-Wire Wire Line
-	9800 3050 9950 3050
-Connection ~ 9950 3050
-Wire Wire Line
-	9950 3050 9950 3150
 $Comp
 L Device:C C2
 U 1 1 63914F29
@@ -675,7 +649,7 @@ F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18NP01H471JN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6300 6550 2    50   Input ~ 0
-MCU-A5
+MCU-A2
 Wire Wire Line
 	3100 3750 3250 3750
 Wire Wire Line
@@ -701,7 +675,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 2200 8100 2200
 Text GLabel 7850 2100 0    50   Input ~ 0
-ADC-Clamp-5
+ADC-Clamp-1
 Wire Wire Line
 	7850 2100 8000 2100
 Connection ~ 8000 2100
@@ -727,7 +701,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 1300 8100 1300
 Text GLabel 7850 1200 0    50   Input ~ 0
-ADC-Clamp-3
+ADC-Clamp-0
 Wire Wire Line
 	7850 1200 8000 1200
 Connection ~ 8000 1200
@@ -776,116 +750,31 @@ From Aux board
 Text Notes 500  5000 0    50   ~ 0
 From Aux board
 $Comp
-L Device:R R9
-U 1 1 63914FAC
-P 5400 1150
-F 0 "R9" V 5193 1150 50  0000 C CNN
-F 1 "470R" V 5284 1150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 1150 50  0001 C CNN
-F 3 "~" H 5400 1150 50  0001 C CNN
-F 4 "Vishay" H -150 -150 50  0001 C CNN "Manufacturer_Name"
-F 5 "MBA02040C4700FRP00" H -150 -150 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "https://www.digikey.com.au/product-detail/en/vishay-beyschlag-draloric-bc-components/MBA02040C4700FRP00/BC3516CT-ND/7350946" H -150 -150 50  0001 C CNN "URL"
-F 7 "BC3516CT-ND" H -150 -150 50  0001 C CNN "Digikey Part Number"
-	1    5400 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 63914FB6
-P 6000 1500
-F 0 "C13" H 6115 1546 50  0000 L CNN
-F 1 "0.22uF" H 6115 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6038 1350 50  0001 C CNN
-F 3 "~" H 6000 1500 50  0001 C CNN
-F 4 "445-180564-1-ND" H -150 -150 50  0001 C CNN "Digikey Part Number"
-F 5 "TDK" H -150 -150 50  0001 C CNN "Manufacturer_Name"
-F 6 "FA18X8R1E224KRU06" H -150 -150 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E224KRU06/445-180564-1-ND/9560690" H -150 -150 50  0001 C CNN "URL"
-	1    6000 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 63914FC0
-P 4950 1500
-F 0 "C9" H 5065 1546 50  0000 L CNN
-F 1 "0.1uF" H 5065 1455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4988 1350 50  0001 C CNN
-F 3 "~" H 4950 1500 50  0001 C CNN
-F 4 "445-180563-1-ND" H -150 -150 50  0001 C CNN "Digikey Part Number"
-F 5 "TDK" H -150 -150 50  0001 C CNN "Manufacturer_Name"
-F 6 "FA18X8R1E104KNU06" H -150 -150 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E104KNU06/445-180563-1-ND/9560689" H -150 -150 50  0001 C CNN "URL"
-	1    4950 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 1650 4950 1800
-Wire Wire Line
-	4950 1800 6000 1800
-Wire Wire Line
-	6300 1800 6300 1900
-Wire Wire Line
-	6000 1650 6000 1800
-Connection ~ 6000 1800
-Wire Wire Line
-	6000 1800 6300 1800
-Wire Wire Line
-	4950 1350 4950 1150
-Wire Wire Line
-	4950 1150 5250 1150
-Wire Wire Line
-	5550 1150 5800 1150
-Wire Wire Line
-	6000 1150 6000 1350
-Text GLabel 5800 850  2    50   Input ~ 0
-ADC-Clamp-6
-Wire Wire Line
-	5800 850  5800 1150
-Connection ~ 5800 1150
-Wire Wire Line
-	5800 1150 6000 1150
-Text GLabel 4800 1150 0    50   Input ~ 0
-Spare-ADC
-Text GLabel 6200 1150 2    50   Input ~ 0
-MCU-A6
-Wire Wire Line
-	6200 1150 6000 1150
-Connection ~ 6000 1150
-Text Notes 4950 700  0    74   ~ 0
-Spare ADC\n
-Text Notes 3600 1200 0    50   ~ 0
-From Aux board
-$Comp
 L Diode:1N5818 D12
 U 1 1 63914FDA
-P 10200 2050
-F 0 "D12" H 10200 2267 50  0000 C CNN
-F 1 "1N5818" H 10200 2176 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10200 1875 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10200 2050 50  0001 C CNN
-	1    10200 2050
+P 10200 2800
+F 0 "D12" H 10200 3017 50  0000 C CNN
+F 1 "1N5818" H 10200 2926 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10200 2625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10200 2800 50  0001 C CNN
+	1    10200 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 2050 10450 2050
+	10350 2800 10450 2800
 Wire Wire Line
-	10050 2050 9950 2050
+	10050 2800 9950 2800
 Wire Wire Line
-	9950 2050 9950 2150
+	9950 2800 9950 2900
 Wire Wire Line
-	9950 2250 10050 2250
-Text GLabel 9800 2150 0    50   Input ~ 0
-ADC-Clamp-6
+	9950 3000 10050 3000
+Text GLabel 9800 2900 0    50   Input ~ 0
+ADC-Clamp-8
 Wire Wire Line
-	9800 2150 9950 2150
-Connection ~ 9950 2150
+	9800 2900 9950 2900
+Connection ~ 9950 2900
 Wire Wire Line
-	9950 2150 9950 2250
-Wire Wire Line
-	4800 1150 4950 1150
-Connection ~ 4950 1150
+	9950 2900 9950 3000
 Wire Wire Line
 	950  1750 1350 1750
 Wire Wire Line
@@ -932,8 +821,6 @@ Text GLabel 1000 3750 0    50   Input ~ 0
 SigRtn
 Text GLabel 3250 4050 3    50   Input ~ 0
 SigRtn
-Text GLabel 6300 1900 3    50   Input ~ 0
-SigRtn
 Text GLabel 6350 3750 3    50   Input ~ 0
 SigRtn
 Text GLabel 6400 5600 3    50   Input ~ 0
@@ -952,9 +839,7 @@ Text GLabel 8500 2000 2    50   Input ~ 0
 SigRtn
 Text GLabel 8500 1100 2    50   Input ~ 0
 SigRtn
-Text GLabel 10450 2050 2    50   Input ~ 0
-SigRtn
-Text GLabel 10450 2950 2    50   Input ~ 0
+Text GLabel 10450 2800 2    50   Input ~ 0
 SigRtn
 $Comp
 L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D1
@@ -1003,23 +888,12 @@ $EndComp
 $Comp
 L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D9
 U 1 1 63915065
-P 10150 2250
-F 0 "D9" H 10150 2450 50  0000 C CNN
-F 1 "1N5231B" H 10150 2350 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 2250 50  0001 C CNN
-F 3 "" H 10150 2250 50  0000 C CNN
-	1    10150 2250
-	1    0    0    1   
-$EndComp
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D10
-U 1 1 6391506B
-P 10150 3150
-F 0 "D10" H 10150 3350 50  0000 C CNN
-F 1 "1N5231B" H 10150 3250 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 3150 50  0001 C CNN
-F 3 "" H 10150 3150 50  0000 C CNN
-	1    10150 3150
+P 10150 3000
+F 0 "D9" H 10150 3200 50  0000 C CNN
+F 1 "1N5231B" H 10150 3100 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 3000 50  0001 C CNN
+F 3 "" H 10150 3000 50  0000 C CNN
+	1    10150 3000
 	1    0    0    1   
 $EndComp
 Text GLabel 8500 1300 2    50   Input ~ 0
@@ -1030,9 +904,7 @@ Text GLabel 8500 3100 2    50   Input ~ 0
 SigRtn
 Text GLabel 10450 1350 2    50   Input ~ 0
 SigRtn
-Text GLabel 10450 2250 2    50   Input ~ 0
-SigRtn
-Text GLabel 10450 3150 2    50   Input ~ 0
+Text GLabel 10450 3000 2    50   Input ~ 0
 SigRtn
 Wire Wire Line
 	8300 1300 8500 1300
@@ -1043,9 +915,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 1350 10450 1350
 Wire Wire Line
-	10250 3150 10450 3150
-Wire Wire Line
-	10250 2250 10450 2250
+	10250 3000 10450 3000
 Wire Wire Line
 	2800 3750 2650 3750
 Wire Wire Line
@@ -1276,4 +1146,134 @@ Wire Wire Line
 	9300 5450 9450 5450
 Wire Wire Line
 	9300 5000 9300 5450
+$Comp
+L Device:R R9
+U 1 1 639B8615
+P 5500 1300
+F 0 "R9" V 5293 1300 50  0000 C CNN
+F 1 "470R" V 5384 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5430 1300 50  0001 C CNN
+F 3 "~" H 5500 1300 50  0001 C CNN
+F 4 "Vishay" H -50 0   50  0001 C CNN "Manufacturer_Name"
+F 5 "MBA02040C4700FRP00" H -50 0   50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.com.au/product-detail/en/vishay-beyschlag-draloric-bc-components/MBA02040C4700FRP00/BC3516CT-ND/7350946" H -50 0   50  0001 C CNN "URL"
+F 7 "BC3516CT-ND" H -50 0   50  0001 C CNN "Digikey Part Number"
+	1    5500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 639B861F
+P 6100 1650
+F 0 "C13" H 6215 1696 50  0000 L CNN
+F 1 "0.22uF" H 6215 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6138 1500 50  0001 C CNN
+F 3 "~" H 6100 1650 50  0001 C CNN
+F 4 "445-180564-1-ND" H -50 0   50  0001 C CNN "Digikey Part Number"
+F 5 "TDK" H -50 0   50  0001 C CNN "Manufacturer_Name"
+F 6 "FA18X8R1E224KRU06" H -50 0   50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E224KRU06/445-180564-1-ND/9560690" H -50 0   50  0001 C CNN "URL"
+	1    6100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 639B8629
+P 5050 1650
+F 0 "C9" H 5165 1696 50  0000 L CNN
+F 1 "0.1uF" H 5165 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5088 1500 50  0001 C CNN
+F 3 "~" H 5050 1650 50  0001 C CNN
+F 4 "445-180563-1-ND" H -50 0   50  0001 C CNN "Digikey Part Number"
+F 5 "TDK" H -50 0   50  0001 C CNN "Manufacturer_Name"
+F 6 "FA18X8R1E104KNU06" H -50 0   50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.com.au/product-detail/en/tdk-corporation/FA18X8R1E104KNU06/445-180563-1-ND/9560689" H -50 0   50  0001 C CNN "URL"
+	1    5050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1800 5050 1950
+Wire Wire Line
+	5050 1950 6100 1950
+Wire Wire Line
+	6400 1950 6400 2050
+Wire Wire Line
+	6100 1800 6100 1950
+Connection ~ 6100 1950
+Wire Wire Line
+	6100 1950 6400 1950
+Wire Wire Line
+	5050 1500 5050 1300
+Wire Wire Line
+	5050 1300 5350 1300
+Wire Wire Line
+	5650 1300 5900 1300
+Wire Wire Line
+	6100 1300 6100 1500
+Wire Wire Line
+	5900 1000 5900 1300
+Connection ~ 5900 1300
+Wire Wire Line
+	5900 1300 6100 1300
+Text GLabel 4900 1300 0    50   Input ~ 0
+Spare-ADC
+Wire Wire Line
+	4900 1300 5050 1300
+Connection ~ 5050 1300
+Wire Wire Line
+	6300 1300 6100 1300
+Connection ~ 6100 1300
+Text Notes 5050 850  0    74   ~ 0
+Spare ADC
+Text GLabel 5900 1000 2    50   Input ~ 0
+ADC-Clamp-6
+Text GLabel 6300 1300 2    50   Input ~ 0
+MCU-A6
+Text Notes 3700 1350 0    50   ~ 0
+From Aux board
+Text GLabel 6400 2050 3    50   Input ~ 0
+SigRtn
+$Comp
+L Diode:1N5818 D13
+U 1 1 639D3CB3
+P 10150 1950
+F 0 "D13" H 10150 2167 50  0000 C CNN
+F 1 "1N5818" H 10150 2076 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 1775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10150 1950 50  0001 C CNN
+	1    10150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 1950 10400 1950
+Wire Wire Line
+	10000 1950 9900 1950
+Wire Wire Line
+	9900 1950 9900 2050
+Wire Wire Line
+	9900 2150 10000 2150
+Text GLabel 9750 2050 0    50   Input ~ 0
+ADC-Clamp-6
+Wire Wire Line
+	9750 2050 9900 2050
+Connection ~ 9900 2050
+Wire Wire Line
+	9900 2050 9900 2150
+Text GLabel 10400 1950 2    50   Input ~ 0
+SigRtn
+$Comp
+L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D10
+U 1 1 639D3CC2
+P 10100 2150
+F 0 "D10" H 10100 2350 50  0000 C CNN
+F 1 "1N5231B" H 10100 2250 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10100 2150 50  0001 C CNN
+F 3 "" H 10100 2150 50  0000 C CNN
+	1    10100 2150
+	1    0    0    1   
+$EndComp
+Text GLabel 10400 2150 2    50   Input ~ 0
+SigRtn
+Wire Wire Line
+	10200 2150 10400 2150
 $EndSCHEMATC

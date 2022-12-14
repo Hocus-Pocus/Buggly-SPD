@@ -164,35 +164,11 @@ Wire Wire Line
 Wire Wire Line
 	2550 4300 2550 4500
 Text GLabel 1350 4200 0    60   Input ~ 0
-MCU-D10
-Text GLabel 1350 4400 0    60   Input ~ 0
-MCU-D11
-$Comp
-L Device:R R?
-U 1 1 63939618
-P 3950 4400
-AR Path="/637A4EA7/63939618" Ref="R?"  Part="1" 
-AR Path="/63700A4E/63939618" Ref="R?"  Part="1" 
-AR Path="/638ED82D/63939618" Ref="R16"  Part="1" 
-F 0 "R16" V 3850 4400 50  0000 C CNN
-F 1 "22R" V 3950 4400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 4400 50  0001 C CNN
-F 3 "" H 3950 4400 50  0000 C CNN
-	1    3950 4400
-	0    1    1    0   
-$EndComp
+MCU-D6
 Text GLabel 4200 4200 2    60   Input ~ 0
-D10-control
-Text GLabel 4200 4400 2    60   Input ~ 0
-D11-control
-Wire Wire Line
-	4200 4400 4100 4400
+D6-control
 Wire Wire Line
 	4200 4200 4100 4200
-Wire Wire Line
-	3800 4400 3550 4400
-Wire Wire Line
-	2400 4400 2700 4400
 Wire Wire Line
 	2400 4200 2700 4200
 Text Notes 4900 1750 0    50   ~ 0
@@ -200,15 +176,13 @@ Text Notes 4900 1750 0    50   ~ 0
 Text Notes 4900 1950 0    50   ~ 0
 (Inj2)
 Text Notes 4900 4250 0    50   ~ 0
-(Idle)
-Text Notes 4900 4450 0    50   ~ 0
-(D13 out)
+(PWM Idle)
 Text GLabel 6800 2250 0    50   Input ~ 0
-MCU-D50
+MCU-D45
 Text GLabel 8000 2250 2    50   Input ~ 0
-D50-control
+D45-control
 Text GLabel 6800 2350 0    50   Input ~ 0
-MCU-D51
+MCU-D49
 Text GLabel 8000 1550 2    50   Input ~ 0
 12V
 $Comp
@@ -263,8 +237,6 @@ NoConn ~ 7800 1750
 NoConn ~ 7800 1850
 NoConn ~ 7000 1850
 NoConn ~ 7000 1750
-Text Notes 5600 4450 0    50   ~ 0
-(2 amp sink)
 Text Notes 4750 6750 0    50   ~ 0
 (Ign2)
 Text Notes 4750 6550 0    50   ~ 0
@@ -280,9 +252,9 @@ Wire Wire Line
 Wire Wire Line
 	4100 6700 4000 6700
 Text GLabel 4100 6700 2    60   Input ~ 0
-D53-control
+D38-control
 Text GLabel 4100 6500 2    60   Input ~ 0
-D52-control
+D40-control
 $Comp
 L Device:R R?
 U 1 1 6393966A
@@ -298,9 +270,9 @@ F 3 "" H 3850 6700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 1250 6700 0    60   Input ~ 0
-MCU-D53
+MCU-D38
 Text GLabel 1250 6500 0    60   Input ~ 0
-MCU-D52
+MCU-D40
 Wire Wire Line
 	2450 6600 2450 6800
 Wire Wire Line
@@ -393,21 +365,19 @@ MCU-D8 (Inj1) Pin default Low, Hi to energise injector, Lo to de-energise inject
 Text Notes 7250 5650 0    50   ~ 0
 MCU-D9 (Inj2) Pin default Low, Hi to energise injector, Lo to de-energise injector.
 Text Notes 7250 5800 0    50   ~ 0
-MCU-D52 (Ign1) Pin default Low, Hi to energise coil, Lo to de-energise coil.
+MCU-D38 (Ign1) Pin default Low, Hi to energise coil, Lo to de-energise coil.
 Text Notes 7250 5950 0    50   ~ 0
-MCU-D53 (Ign2) Pin default Low, Hi to energise coil, Lo to de-energise coil.
+MCU-D40 (Ign2) Pin default Low, Hi to energise coil, Lo to de-energise coil.
 Text Notes 7250 6100 0    50   ~ 0
-MCU-D50 (ASD Relay)) Pin default Low, Hi to energise relay, Lo to de-energise relay.
+MCU-D45 (ASD Relay)) Pin default Low, Hi to energise relay, Lo to de-energise relay.
 Text Notes 7250 6300 0    50   ~ 0
-MCU-D51 (Tachometer) Pin default Low, Goes Hi after boot sequence.\nGoes Lo at start of dwell, goes Hi at end of dwell.
+MCU-D49 (Tachometer) Pin default Low, Goes Hi after boot sequence.\nGoes Lo at start of dwell, goes Hi at end of dwell.
 NoConn ~ 7800 1950
 NoConn ~ 7800 2050
 NoConn ~ 7800 2150
 NoConn ~ 7000 2150
 NoConn ~ 7000 2050
 NoConn ~ 7000 1950
-Text Notes 5300 4450 0    50   ~ 0
-(Spare)
 $Comp
 L Device:R R18
 U 1 1 63A4A309
@@ -477,7 +447,7 @@ F5-out
 Text GLabel 8050 4900 2    50   Input ~ 0
 Tachometer
 Text GLabel 8050 4600 2    50   Input ~ 0
-D51-control
+D49-control
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:2N3906 Q1
 U 1 1 63A4A337
@@ -536,7 +506,7 @@ F 3 "" H 3000 6550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8000 2350 2    50   Input ~ 0
-D51-control
+D49-control
 $Comp
 L Device:R R?
 U 1 1 63A1740B
@@ -577,20 +547,6 @@ F 1 "1K" V 2250 4200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2180 4200 50  0001 C CNN
 F 3 "" H 2250 4200 50  0000 C CNN
 	1    2250 4200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 63A18006
-P 2250 4400
-AR Path="/637A4EA7/63A18006" Ref="R?"  Part="1" 
-AR Path="/63700A4E/63A18006" Ref="R?"  Part="1" 
-AR Path="/638ED82D/63A18006" Ref="R35"  Part="1" 
-F 0 "R35" V 2150 4400 50  0000 C CNN
-F 1 "1K" V 2250 4400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2180 4400 50  0001 C CNN
-F 3 "" H 2250 4400 50  0000 C CNN
-	1    2250 4400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -665,20 +621,6 @@ F 3 "" H 1850 3950 50  0000 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 63A1A75D
-P 1850 4650
-AR Path="/637A4EA7/63A1A75D" Ref="R?"  Part="1" 
-AR Path="/63700A4E/63A1A75D" Ref="R?"  Part="1" 
-AR Path="/638ED82D/63A1A75D" Ref="R27"  Part="1" 
-F 0 "R27" V 1750 4650 50  0000 C CNN
-F 1 "100K" V 1850 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1780 4650 50  0001 C CNN
-F 3 "" H 1850 4650 50  0000 C CNN
-	1    1850 4650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 63A1AB1A
 P 1750 6250
 AR Path="/637A4EA7/63A1AB1A" Ref="R?"  Part="1" 
@@ -733,20 +675,6 @@ F 1 "GND" H 4000 6000 50  0000 C CNN
 F 2 "" H 4000 6150 50  0000 C CNN
 F 3 "" H 4000 6150 50  0000 C CNN
 	1    4000 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 63A26BD3
-P 1850 4900
-AR Path="/637A4EA7/63A26BD3" Ref="#PWR?"  Part="1" 
-AR Path="/63700A4E/63A26BD3" Ref="#PWR?"  Part="1" 
-AR Path="/638ED82D/63A26BD3" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 1850 4650 50  0001 C CNN
-F 1 "GND" H 1850 4750 50  0000 C CNN
-F 2 "" H 1850 4900 50  0000 C CNN
-F 3 "" H 1850 4900 50  0000 C CNN
-	1    1850 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -857,21 +785,12 @@ Wire Wire Line
 	3850 5550 3550 5550
 Connection ~ 3850 5550
 Wire Wire Line
-	2100 4400 1850 4400
-Wire Wire Line
 	2100 4200 1850 4200
 Wire Wire Line
 	1850 4100 1850 4200
 Connection ~ 1850 4200
 Wire Wire Line
 	1850 4200 1350 4200
-Wire Wire Line
-	1850 4800 1850 4900
-Wire Wire Line
-	1850 4500 1850 4400
-Connection ~ 1850 4400
-Wire Wire Line
-	1850 4400 1350 4400
 $Comp
 L power:GND #PWR?
 U 1 1 63A71358
@@ -918,9 +837,7 @@ Text Notes 5150 1750 0    50   ~ 0
 (AUIRF3205)
 Text Notes 5150 1950 0    50   ~ 0
 (AUIRF3205)
-Text Notes 5150 4250 0    50   ~ 0
-(AUIRF3205)
-Text Notes 4900 4550 0    50   ~ 0
+Text Notes 5350 4250 0    50   ~ 0
 (AUIRF3205)
 Text Notes 5000 6550 0    50   ~ 0
 (ISL9V3040P3)
@@ -928,4 +845,83 @@ Text Notes 5000 6750 0    50   ~ 0
 (ISL9V3040P3)
 Wire Wire Line
 	1850 3700 1850 3800
+Text GLabel 1350 4400 0    60   Input ~ 0
+MCU-D5
+Wire Wire Line
+	2400 4400 2700 4400
+$Comp
+L Device:R R?
+U 1 1 639DFDC4
+P 2250 4400
+AR Path="/637A4EA7/639DFDC4" Ref="R?"  Part="1" 
+AR Path="/63700A4E/639DFDC4" Ref="R?"  Part="1" 
+AR Path="/638ED82D/639DFDC4" Ref="R27"  Part="1" 
+F 0 "R27" V 2150 4400 50  0000 C CNN
+F 1 "1K" V 2250 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2180 4400 50  0001 C CNN
+F 3 "" H 2250 4400 50  0000 C CNN
+	1    2250 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 639DFDCA
+P 1900 4650
+AR Path="/637A4EA7/639DFDCA" Ref="R?"  Part="1" 
+AR Path="/63700A4E/639DFDCA" Ref="R?"  Part="1" 
+AR Path="/638ED82D/639DFDCA" Ref="R16"  Part="1" 
+F 0 "R16" V 1800 4650 50  0000 C CNN
+F 1 "100K" V 1900 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1830 4650 50  0001 C CNN
+F 3 "" H 1900 4650 50  0000 C CNN
+	1    1900 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 639DFDD0
+P 1900 4950
+AR Path="/637A4EA7/639DFDD0" Ref="#PWR?"  Part="1" 
+AR Path="/63700A4E/639DFDD0" Ref="#PWR?"  Part="1" 
+AR Path="/638ED82D/639DFDD0" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 1900 4700 50  0001 C CNN
+F 1 "GND" H 1900 4800 50  0000 C CNN
+F 2 "" H 1900 4950 50  0000 C CNN
+F 3 "" H 1900 4950 50  0000 C CNN
+	1    1900 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4400 1900 4400
+Wire Wire Line
+	1900 4500 1900 4400
+Connection ~ 1900 4400
+Wire Wire Line
+	1900 4400 2100 4400
+Wire Wire Line
+	1900 4800 1900 4950
+$Comp
+L Device:R R?
+U 1 1 639E63BB
+P 3950 4400
+AR Path="/637A4EA7/639E63BB" Ref="R?"  Part="1" 
+AR Path="/63700A4E/639E63BB" Ref="R?"  Part="1" 
+AR Path="/638ED82D/639E63BB" Ref="R35"  Part="1" 
+F 0 "R35" V 3850 4400 50  0000 C CNN
+F 1 "22R" V 3950 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3880 4400 50  0001 C CNN
+F 3 "" H 3950 4400 50  0000 C CNN
+	1    3950 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 4200 4400 2    60   Input ~ 0
+D5-control
+Wire Wire Line
+	4200 4400 4100 4400
+Wire Wire Line
+	3800 4400 3550 4400
+Text Notes 4900 4450 0    50   ~ 0
+(Spare H/C out)
+Text Notes 5600 4450 0    50   ~ 0
+(AUIRF3205)
 $EndSCHEMATC

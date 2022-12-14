@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
-Title ""
-Date ""
+Title "Buggly SPD"
+Date "2022-12-14"
 Rev ""
-Comp ""
+Comp "Robert Hiebert"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -461,8 +461,8 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 639362F8
 P 5400 2500
 AR Path="/638E2E23/639362F8" Ref="J?"  Part="1" 
-AR Path="/6392B340/639362F8" Ref="J8"  Part="1" 
-F 0 "J8" H 5318 2717 50  0000 C CNN
+AR Path="/6392B340/639362F8" Ref="J14"  Part="1" 
+F 0 "J14" H 5318 2717 50  0000 C CNN
 F 1 "12V Test" H 5318 2626 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5400 2500 50  0001 C CNN
 F 3 "~" H 5400 2500 50  0001 C CNN
