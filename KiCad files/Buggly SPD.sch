@@ -382,4 +382,23 @@ F 3 "~" H 4200 6400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 6000 4500 6200
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 63BC3131
+P 6100 1600
+F 0 "J17" V 6250 1600 50  0000 R CNN
+F 1 "Conn_01x02" V 6350 1750 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6100 1600 50  0001 C CNN
+F 3 "~" H 6100 1600 50  0001 C CNN
+	1    6100 1600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6200 1800 3    50   Input ~ 0
+MCU-D0
+Text GLabel 6100 1800 3    50   Input ~ 0
+MCU-D1
+Text Notes 6250 2750 1    50   ~ 0
+Bluetooth RX0
+Text Notes 6150 2750 1    50   ~ 0
+Bluetooth TX0
 $EndSCHEMATC

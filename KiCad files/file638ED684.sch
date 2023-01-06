@@ -576,32 +576,6 @@ ADC-Clamp-1
 Text GLabel 5900 6250 2    50   Input ~ 0
 ADC-Clamp-2
 $Comp
-L Diode:1N5818 D8
-U 1 1 63914EF5
-P 10200 1150
-F 0 "D8" H 10200 1367 50  0000 C CNN
-F 1 "1N5818" H 10200 1276 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10200 975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10200 1150 50  0001 C CNN
-	1    10200 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 1150 10450 1150
-Wire Wire Line
-	10050 1150 9950 1150
-Wire Wire Line
-	9950 1150 9950 1250
-Wire Wire Line
-	9950 1350 10050 1350
-Text GLabel 9800 1250 0    50   Input ~ 0
-ADC-Clamp-4
-Wire Wire Line
-	9800 1250 9950 1250
-Connection ~ 9950 1250
-Wire Wire Line
-	9950 1250 9950 1350
-$Comp
 L Device:C C2
 U 1 1 63914F29
 P 1400 3150
@@ -655,84 +629,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 3750 3250 3750
 Connection ~ 3250 3750
-$Comp
-L Diode:1N5818 D6
-U 1 1 63914F48
-P 8250 2000
-F 0 "D6" H 8250 2217 50  0000 C CNN
-F 1 "1N5818" H 8250 2126 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 1825 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8250 2000 50  0001 C CNN
-	1    8250 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 2000 8500 2000
-Wire Wire Line
-	8100 2000 8000 2000
-Wire Wire Line
-	8000 2000 8000 2100
-Wire Wire Line
-	8000 2200 8100 2200
-Text GLabel 7850 2100 0    50   Input ~ 0
-ADC-Clamp-1
-Wire Wire Line
-	7850 2100 8000 2100
-Connection ~ 8000 2100
-Wire Wire Line
-	8000 2100 8000 2200
-$Comp
-L Diode:1N5818 D5
-U 1 1 63914F56
-P 8250 1100
-F 0 "D5" H 8250 1317 50  0000 C CNN
-F 1 "1N5818" H 8250 1226 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 925 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8250 1100 50  0001 C CNN
-	1    8250 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 1100 8500 1100
-Wire Wire Line
-	8100 1100 8000 1100
-Wire Wire Line
-	8000 1100 8000 1200
-Wire Wire Line
-	8000 1300 8100 1300
-Text GLabel 7850 1200 0    50   Input ~ 0
-ADC-Clamp-0
-Wire Wire Line
-	7850 1200 8000 1200
-Connection ~ 8000 1200
-Wire Wire Line
-	8000 1200 8000 1300
-$Comp
-L Diode:1N5818 D7
-U 1 1 63914F64
-P 8250 2900
-F 0 "D7" H 8250 3117 50  0000 C CNN
-F 1 "1N5818" H 8250 3026 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 2725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 8250 2900 50  0001 C CNN
-	1    8250 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 2900 8500 2900
-Wire Wire Line
-	8100 2900 8000 2900
-Wire Wire Line
-	8000 2900 8000 3000
-Wire Wire Line
-	8000 3100 8100 3100
-Text GLabel 7850 3000 0    50   Input ~ 0
-ADC-Clamp-2
-Wire Wire Line
-	7850 3000 8000 3000
-Connection ~ 8000 3000
-Wire Wire Line
-	8000 3000 8000 3100
 Wire Wire Line
 	1150 6550 1150 6750
 Wire Wire Line
@@ -749,32 +645,6 @@ Text Notes 3750 4900 0    50   ~ 0
 From Aux board
 Text Notes 500  5000 0    50   ~ 0
 From Aux board
-$Comp
-L Diode:1N5818 D12
-U 1 1 63914FDA
-P 10200 2800
-F 0 "D12" H 10200 3017 50  0000 C CNN
-F 1 "1N5818" H 10200 2926 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10200 2625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10200 2800 50  0001 C CNN
-	1    10200 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 2800 10450 2800
-Wire Wire Line
-	10050 2800 9950 2800
-Wire Wire Line
-	9950 2800 9950 2900
-Wire Wire Line
-	9950 3000 10050 3000
-Text GLabel 9800 2900 0    50   Input ~ 0
-ADC-Clamp-8
-Wire Wire Line
-	9800 2900 9950 2900
-Connection ~ 9950 2900
-Wire Wire Line
-	9950 2900 9950 3000
 Wire Wire Line
 	950  1750 1350 1750
 Wire Wire Line
@@ -831,91 +701,6 @@ Text GLabel 2850 7300 3    50   Input ~ 0
 SigRtn
 Text GLabel 6400 7300 3    50   Input ~ 0
 SigRtn
-Text GLabel 10450 1150 2    50   Input ~ 0
-SigRtn
-Text GLabel 8500 2900 2    50   Input ~ 0
-SigRtn
-Text GLabel 8500 2000 2    50   Input ~ 0
-SigRtn
-Text GLabel 8500 1100 2    50   Input ~ 0
-SigRtn
-Text GLabel 10450 2800 2    50   Input ~ 0
-SigRtn
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D1
-U 1 1 6391504D
-P 8200 1300
-F 0 "D1" H 8200 1500 50  0000 C CNN
-F 1 "1N5231B" H 8200 1400 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8200 1300 50  0001 C CNN
-F 3 "" H 8200 1300 50  0000 C CNN
-	1    8200 1300
-	1    0    0    1   
-$EndComp
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D2
-U 1 1 63915053
-P 8200 2200
-F 0 "D2" H 8200 2400 50  0000 C CNN
-F 1 "1N5231B" H 8200 2300 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8200 2200 50  0001 C CNN
-F 3 "" H 8200 2200 50  0000 C CNN
-	1    8200 2200
-	1    0    0    1   
-$EndComp
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D3
-U 1 1 63915059
-P 8200 3100
-F 0 "D3" H 8200 3300 50  0000 C CNN
-F 1 "1N5231B" H 8200 3200 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8200 3100 50  0001 C CNN
-F 3 "" H 8200 3100 50  0000 C CNN
-	1    8200 3100
-	1    0    0    1   
-$EndComp
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D4
-U 1 1 6391505F
-P 10150 1350
-F 0 "D4" H 10150 1550 50  0000 C CNN
-F 1 "1N5231B" H 10150 1450 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 1350 50  0001 C CNN
-F 3 "" H 10150 1350 50  0000 C CNN
-	1    10150 1350
-	1    0    0    1   
-$EndComp
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D9
-U 1 1 63915065
-P 10150 3000
-F 0 "D9" H 10150 3200 50  0000 C CNN
-F 1 "1N5231B" H 10150 3100 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 3000 50  0001 C CNN
-F 3 "" H 10150 3000 50  0000 C CNN
-	1    10150 3000
-	1    0    0    1   
-$EndComp
-Text GLabel 8500 1300 2    50   Input ~ 0
-SigRtn
-Text GLabel 8500 2200 2    50   Input ~ 0
-SigRtn
-Text GLabel 8500 3100 2    50   Input ~ 0
-SigRtn
-Text GLabel 10450 1350 2    50   Input ~ 0
-SigRtn
-Text GLabel 10450 3000 2    50   Input ~ 0
-SigRtn
-Wire Wire Line
-	8300 1300 8500 1300
-Wire Wire Line
-	8300 2200 8500 2200
-Wire Wire Line
-	8300 3100 8500 3100
-Wire Wire Line
-	10250 1350 10450 1350
-Wire Wire Line
-	10250 3000 10450 3000
 Wire Wire Line
 	2800 3750 2650 3750
 Wire Wire Line
@@ -1044,80 +829,11 @@ F 3 "" H 9300 5950 50  0001 C CNN
 $EndComp
 Text GLabel 8300 5450 0    50   Input ~ 0
 CKP-
-$Comp
-L Diode:1N5818 D?
-U 1 1 6393C9BB
-P 9850 4900
-AR Path="/638E2E23/6393C9BB" Ref="D?"  Part="1" 
-AR Path="/638ED82D/6393C9BB" Ref="D?"  Part="1" 
-AR Path="/638ED685/6393C9BB" Ref="D14"  Part="1" 
-F 0 "D14" H 9850 5117 50  0000 C CNN
-F 1 "1N5818" H 9850 5026 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9850 4725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 9850 4900 50  0001 C CNN
-	1    9850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6393C9C1
-P 10100 4900
-AR Path="/638E2E23/6393C9C1" Ref="#PWR?"  Part="1" 
-AR Path="/638ED82D/6393C9C1" Ref="#PWR?"  Part="1" 
-AR Path="/638ED685/6393C9C1" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 10100 4650 50  0001 C CNN
-F 1 "GND" V 10100 4700 50  0000 C CNN
-F 2 "" H 10100 4900 50  0001 C CNN
-F 3 "" H 10100 4900 50  0001 C CNN
-	1    10100 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10000 4900 10100 4900
-Wire Wire Line
-	9700 4900 9600 4900
-Wire Wire Line
-	9600 4900 9600 5000
-Wire Wire Line
-	9600 5100 9700 5100
-Connection ~ 9600 5000
-Wire Wire Line
-	9600 5000 9600 5100
 Text Notes 9900 5500 0    50   ~ 0
 CKP input
-Text Notes 7150 4600 0    50   ~ 0
+Text Notes 7700 4800 0    50   ~ 0
 DIP8 sized socket pair will accept conditioner modules from WTMotronics, \nJB Perf V2.1, and possibly others that use the MAX9926 chip.
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D?
-U 1 1 6393C9CF
-P 9800 5100
-AR Path="/638E2E23/6393C9CF" Ref="D?"  Part="1" 
-AR Path="/638ED82D/6393C9CF" Ref="D?"  Part="1" 
-AR Path="/638ED685/6393C9CF" Ref="D11"  Part="1" 
-F 0 "D11" H 9800 4900 50  0000 C CNN
-F 1 "1N5231B" H 9800 5000 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9800 5100 50  0001 C CNN
-F 3 "" H 9800 5100 50  0000 C CNN
-	1    9800 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6393C9D5
-P 10100 5100
-AR Path="/638E2E23/6393C9D5" Ref="#PWR?"  Part="1" 
-AR Path="/638ED82D/6393C9D5" Ref="#PWR?"  Part="1" 
-AR Path="/638ED685/6393C9D5" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 10100 4850 50  0001 C CNN
-F 1 "GND" V 10100 4900 50  0000 C CNN
-F 2 "" H 10100 5100 50  0001 C CNN
-F 3 "" H 10100 5100 50  0001 C CNN
-	1    10100 5100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9900 5100 10100 5100
-Text Notes 7450 4900 0    74   ~ 0
+Text Notes 8200 5050 0    74   ~ 0
 Crank Angle Sensor Conditioner
 Wire Wire Line
 	9300 5850 9300 5950
@@ -1128,8 +844,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 5850 9300 5850
 Connection ~ 9300 5850
-Wire Wire Line
-	9300 5000 9600 5000
 Wire Wire Line
 	8300 5450 8400 5450
 Wire Wire Line
@@ -1144,8 +858,6 @@ Wire Wire Line
 Connection ~ 9300 5450
 Wire Wire Line
 	9300 5450 9450 5450
-Wire Wire Line
-	9300 5000 9300 5450
 $Comp
 L Device:R R9
 U 1 1 639B8615
@@ -1234,46 +946,189 @@ From Aux board
 Text GLabel 6400 2050 3    50   Input ~ 0
 SigRtn
 $Comp
-L Diode:1N5818 D13
-U 1 1 639D3CB3
-P 10150 1950
-F 0 "D13" H 10150 2167 50  0000 C CNN
-F 1 "1N5818" H 10150 2076 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10150 1775 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 10150 1950 50  0001 C CNN
-	1    10150 1950
+L Buggly~SPD:SP721APP J16
+U 1 1 63AEA31A
+P 8950 1500
+F 0 "J16" H 9000 1817 50  0000 C CNN
+F 1 "SP721APP" H 9000 1726 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 8950 1500 50  0001 C CNN
+F 3 "~" H 8950 1500 50  0001 C CNN
+	1    8950 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10300 1950 10400 1950
-Wire Wire Line
-	10000 1950 9900 1950
-Wire Wire Line
-	9900 1950 9900 2050
-Wire Wire Line
-	9900 2150 10000 2150
-Text GLabel 9750 2050 0    50   Input ~ 0
-ADC-Clamp-6
-Wire Wire Line
-	9750 2050 9900 2050
-Connection ~ 9900 2050
-Wire Wire Line
-	9900 2050 9900 2150
-Text GLabel 10400 1950 2    50   Input ~ 0
-SigRtn
 $Comp
-L V10-Ign-Inj-Drivers-V2-rescue:ZENERsmall D10
-U 1 1 639D3CC2
-P 10100 2150
-F 0 "D10" H 10100 2350 50  0000 C CNN
-F 1 "1N5231B" H 10100 2250 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10100 2150 50  0001 C CNN
-F 3 "" H 10100 2150 50  0000 C CNN
-	1    10100 2150
-	1    0    0    1   
+L power:VDDA #PWR015
+U 1 1 63AF2602
+P 9350 1400
+F 0 "#PWR015" H 9350 1250 50  0001 C CNN
+F 1 "VDDA" V 9367 1528 50  0000 L CNN
+F 2 "" H 9350 1400 50  0001 C CNN
+F 3 "" H 9350 1400 50  0001 C CNN
+	1    9350 1400
+	0    1    1    0   
 $EndComp
-Text GLabel 10400 2150 2    50   Input ~ 0
+Text GLabel 8650 1700 0    50   Input ~ 0
 SigRtn
+Text GLabel 8650 1400 0    50   Input ~ 0
+ADC-Clamp-0
+Text GLabel 8650 1500 0    50   Input ~ 0
+ADC-Clamp-1
+Text GLabel 8650 1600 0    50   Input ~ 0
+ADC-Clamp-2
+Text GLabel 9350 1500 2    50   Input ~ 0
+ADC-Clamp-8
+Text GLabel 9350 1600 2    50   Input ~ 0
+ADC-Clamp-6
+Text GLabel 9350 1700 2    50   Input ~ 0
+ADC-Clamp-4
+Text Notes 7900 1450 0    50   ~ 0
+IAT
+Text Notes 7900 1550 0    50   ~ 0
+CLT
+Text Notes 7900 1650 0    50   ~ 0
+TPS
+Text Notes 10000 1750 0    50   ~ 0
+BAT
+Text Notes 10000 1650 0    50   ~ 0
+Spare
+Text Notes 10000 1550 0    50   ~ 0
+O2
+Text Notes 8800 950  0    74   ~ 0
+ADC Clamps
 Wire Wire Line
-	10200 2150 10400 2150
+	9250 1700 9350 1700
+Wire Wire Line
+	9250 1600 9350 1600
+Wire Wire Line
+	9250 1500 9350 1500
+Wire Wire Line
+	9250 1400 9350 1400
+Wire Wire Line
+	8650 1400 8750 1400
+Wire Wire Line
+	8650 1500 8750 1500
+Wire Wire Line
+	8650 1600 8750 1600
+Wire Wire Line
+	8650 1700 8750 1700
+$Comp
+L Connector_Generic:Conn_01x04 J18
+U 1 1 63BCC102
+P 9050 3300
+F 0 "J18" H 9000 3500 50  0000 L CNN
+F 1 "Conn_01x04" H 8850 3600 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 9050 3300 50  0001 C CNN
+F 3 "~" H 9050 3300 50  0001 C CNN
+	1    9050 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 2750 0    74   ~ 0
+DSD Tech HC-06 Bluetooth module header
+Text GLabel 8700 3400 0    50   Input ~ 0
+MCU-D0
+Text GLabel 8700 3500 0    50   Input ~ 0
+MCU-D1
+$Comp
+L power:GND #PWR?
+U 1 1 63BCCAAA
+P 8700 3300
+AR Path="/638E2E23/63BCCAAA" Ref="#PWR?"  Part="1" 
+AR Path="/638ED82D/63BCCAAA" Ref="#PWR?"  Part="1" 
+AR Path="/638ED685/63BCCAAA" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 8700 3050 50  0001 C CNN
+F 1 "GND" V 8700 3100 50  0000 C CNN
+F 2 "" H 8700 3300 50  0001 C CNN
+F 3 "" H 8700 3300 50  0001 C CNN
+	1    8700 3300
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 63BCD422
+P 8700 3200
+AR Path="/638E2E23/63BCD422" Ref="#PWR?"  Part="1" 
+AR Path="/638ED82D/63BCD422" Ref="#PWR?"  Part="1" 
+AR Path="/638ED685/63BCD422" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 8700 3050 50  0001 C CNN
+F 1 "VDD" V 8718 3327 50  0000 L CNN
+F 2 "" H 8700 3200 50  0001 C CNN
+F 3 "" H 8700 3200 50  0001 C CNN
+	1    8700 3200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 63BCE06B
+P 8600 3800
+F 0 "R36" V 8700 3800 50  0000 C CNN
+F 1 "1K" V 8800 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 3800 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+F 4 "Vishay" H 5850 1900 50  0001 C CNN "Manufacturer_Name"
+F 5 "MBA02040C4700FRP00" H 5850 1900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.com.au/product-detail/en/vishay-beyschlag-draloric-bc-components/MBA02040C4700FRP00/BC3516CT-ND/7350946" H 5850 1900 50  0001 C CNN "URL"
+F 7 "BC3516CT-ND" H 5850 1900 50  0001 C CNN "Digikey Part Number"
+	1    8600 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 63BCE7FA
+P 9000 3800
+F 0 "R37" V 9100 3800 50  0000 C CNN
+F 1 "2.2K" V 9200 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8930 3800 50  0001 C CNN
+F 3 "~" H 9000 3800 50  0001 C CNN
+F 4 "Vishay" H 6250 1900 50  0001 C CNN "Manufacturer_Name"
+F 5 "MBA02040C4700FRP00" H 6250 1900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.com.au/product-detail/en/vishay-beyschlag-draloric-bc-components/MBA02040C4700FRP00/BC3516CT-ND/7350946" H 6250 1900 50  0001 C CNN "URL"
+F 7 "BC3516CT-ND" H 6250 1900 50  0001 C CNN "Digikey Part Number"
+	1    9000 3800
+	0    1    1    0   
+$EndComp
+Text Notes 9200 3200 0    50   ~ 0
+5V
+Text Notes 9200 3300 0    50   ~ 0
+Gnd
+Text Notes 9200 3400 0    50   ~ 0
+BT TX
+Text Notes 9200 3500 0    50   ~ 0
+BT RX
+Text Notes 8150 3450 0    50   ~ 0
+RX0
+Text Notes 8150 3550 0    50   ~ 0
+TX0
+Wire Wire Line
+	8850 3200 8700 3200
+Wire Wire Line
+	8850 3300 8700 3300
+Wire Wire Line
+	8850 3400 8700 3400
+Wire Wire Line
+	8850 3500 8850 3800
+Wire Wire Line
+	8850 3800 8750 3800
+Connection ~ 8850 3800
+Wire Wire Line
+	8450 3800 8450 3650
+Wire Wire Line
+	8450 3650 8700 3650
+Wire Wire Line
+	8700 3650 8700 3500
+$Comp
+L power:GND #PWR?
+U 1 1 63BEEB48
+P 9250 3800
+AR Path="/638E2E23/63BEEB48" Ref="#PWR?"  Part="1" 
+AR Path="/638ED82D/63BEEB48" Ref="#PWR?"  Part="1" 
+AR Path="/638ED685/63BEEB48" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 9250 3550 50  0001 C CNN
+F 1 "GND" V 9250 3600 50  0000 C CNN
+F 2 "" H 9250 3800 50  0001 C CNN
+F 3 "" H 9250 3800 50  0001 C CNN
+	1    9250 3800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9250 3800 9150 3800
 $EndSCHEMATC

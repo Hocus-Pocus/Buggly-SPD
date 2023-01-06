@@ -1,4 +1,4 @@
-19415332617715022
+19418679422604475
 BPEM488CWaux
 A4988StepStick
 Through hole straight pin header, 1x08, 2.54mm pitch, single row
@@ -427,6 +427,13 @@ ptc resettable fuse polyfuse THT
 2
 2
 Buggly SPD Aux
+Molex-1586037-6
+
+
+0
+6
+6
+Buggly SPD Aux
 Phoenix_1714955
 
 
@@ -469,11 +476,18 @@ Phoenix_1730010
 2
 2
 Buggly SPD Aux
+Spartan_2_OEM
+
+
+0
+17
+17
+Buggly SPD Aux
 VCF4-1000
 
 
 0
-7
+5
 5
 Button_Switch_Keyboard
 SW_Cherry_MX_1.00u_PCB
